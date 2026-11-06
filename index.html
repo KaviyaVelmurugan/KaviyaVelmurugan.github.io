@@ -28,7 +28,8 @@
             </ul>
 
             <button class="menu-toggle" id="menuToggle"
-                    aria-label="Toggle navigation" aria-expanded="false">
+                    type="button" aria-label="Toggle navigation"
+                    aria-controls="navLinks" aria-expanded="false">
                 ☰
             </button>
         </nav>
@@ -41,7 +42,7 @@
             <div class="hero-content">
                 <p class="eyebrow">AI · DATA · FINTECH · BUSINESS INTELLIGENCE</p>
 
-                <h1>Turning Data <br>Into <span>Decisions.</span></h1>
+                <h1>Turning Data Into <span>Decisions.</span></h1>
 
                 <p class="hero-description">
                     I'm Kaviya Velmurugan, an Artificial Intelligence and
@@ -71,9 +72,45 @@
                 </div>
             </div>
 
-            <div class="hero-image">
-                <img src="assets/profile.jpg"
-                     alt="Kaviya Velmurugan">
+            <div class="hero-network">
+                <svg viewBox="0 0 480 350" aria-hidden="true" focusable="false">
+                    <defs>
+                        <linearGradient id="network-gradient" x2="100%" y2="100%">
+                            <stop stop-color="#A78BFA"/>
+                            <stop offset="1" stop-color="#60A5FA"/>
+                        </linearGradient>
+                    </defs>
+                    <g class="network-orbits" fill="none" stroke="url(#network-gradient)">
+                        <circle cx="240" cy="175" r="78"/>
+                        <circle cx="240" cy="175" r="132"/>
+                        <ellipse cx="240" cy="175" rx="203" ry="124" transform="rotate(-23 240 175)"/>
+                    </g>
+                    <path class="network-edges" fill="none" stroke="url(#network-gradient)"
+                          d="M48 93 108 124 173 78 240 104 309 79 374 121 435 79
+                             M46 255 107 229 171 272 240 246 308 271 374 229 431 272
+                             M108 124 107 229 240 175 108 124 240 104 240 246 108 124
+                             M374 121 374 229 240 175 374 121 240 246 374 229 240 104 374 121
+                             M173 78 240 175 309 79 M171 272 240 175 308 271
+                             M107 229 240 246 M108 124 173 78 171 272 M309 79 308 271"/>
+                    <g fill="url(#network-gradient)">
+                        <circle cx="48" cy="93" r="3"/><circle cx="46" cy="255" r="3"/>
+                        <circle cx="435" cy="79" r="3"/><circle cx="431" cy="272" r="3"/>
+                        <circle cx="173" cy="78" r="4"/><circle cx="171" cy="272" r="4"/>
+                        <circle cx="309" cy="79" r="4"/><circle cx="308" cy="271" r="4"/>
+                        <circle class="network-pulse" cx="108" cy="124" r="7"/>
+                        <circle class="network-pulse network-pulse-delay" cx="107" cy="229" r="6"/>
+                        <circle class="network-pulse network-pulse-delay" cx="374" cy="121" r="6"/>
+                        <circle class="network-pulse" cx="374" cy="229" r="7"/>
+                        <circle cx="240" cy="104" r="4"/><circle cx="240" cy="246" r="4"/>
+                        <circle class="network-pulse network-pulse-delay" cx="240" cy="175" r="11"/>
+                    </g>
+                </svg>
+                <ul class="hero-interests" aria-label="Career interests">
+                    <li>Business Analysis</li>
+                    <li>Data Analytics</li>
+                    <li>AI/ML</li>
+                    <li>Data Engineering</li>
+                </ul>
             </div>
         </section>
 
@@ -255,11 +292,8 @@
                     <h3>Internship Trainee</h3>
                     <h4>Ibrook Infotech · Chennai</h4>
                     <p>
-                    
-                        Focused on learning and implementing concepts of
-                        full-stack development, SQL and cloud computing,
-                        with hands-on exposure to software development
-                        fundamentals.
+                        Learned and applied concepts in full-stack development, SQL,
+                        and cloud computing through hands-on practice.
                     </p>
                 </article>
 
